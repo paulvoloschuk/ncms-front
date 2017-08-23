@@ -1,0 +1,29 @@
+:global {
+  @import 'base';
+  @import '~normalize.css/normalize';
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+  // Some best-practice CSS that's useful for most apps
+  // Just remove them if they're not what you want
+  html {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #fafafa;
+    font: 14px/22px 'Open Sans';
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  *:focus {
+    outline: none;
+  }
+}

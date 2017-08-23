@@ -1,0 +1,60 @@
+.label {
+  position: relative;
+  display: block;
+  padding: 1em 0;
+  white-space: nowrap;
+  .label__placeholder {
+    pointer-events: none;
+    transition: all .2s ease-in-out;
+    text-transform: uppercase;
+    position: absolute;
+    left: .2em;
+    bottom: 1.3em;
+    font-weight: 400;
+    &::after {
+      content: '...';
+      transition: opacity .2s linear;
+      opacity: 1;
+    }
+  }
+  input {
+    width: 100%;
+    background: none;
+    border: none;
+    font-weight: 400;
+    font-size: 120%;
+    padding: .2em;
+    transition: all .2s ease-in-out;
+    &[type="text"], &[type="password"] {
+      border-bottom: 1px solid #222222;
+    }
+    &[type="submit"] {
+      border: 1px solid #8eadda;
+      padding: .6em 1em;
+      border-radius: 2px;
+      &:hover {
+        background: #8eadda;
+        color: white;
+      }
+    }
+    &:focus {
+      border-color: #8eadda;
+      & + .label__placeholder {
+        transform: translateY(-120%);
+        font-size: 80%;
+        font-weight: 800;
+        &::after {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  &--active .label__placeholder {
+    transform: translateY(-120%);
+    font-size: 80%;
+    font-weight: 800;
+    &::after {
+      opacity: 0;
+    }
+  }
+}
