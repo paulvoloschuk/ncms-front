@@ -8,7 +8,7 @@ exports.modules = {
 	
 	exports.__esModule = true;
 	
-	var _defineProperty = __webpack_require__(129);
+	var _defineProperty = __webpack_require__(132);
 	
 	var _defineProperty2 = _interopRequireDefault(_defineProperty);
 	
@@ -40,7 +40,7 @@ exports.modules = {
 	    value: true
 	});
 	
-	var _reactRedux = __webpack_require__(158);
+	var _reactRedux = __webpack_require__(161);
 	
 	var _async = __webpack_require__(317);
 	
@@ -199,23 +199,23 @@ exports.modules = {
 	
 	var _stringify2 = _interopRequireDefault(_stringify);
 	
-	var _getPrototypeOf = __webpack_require__(123);
+	var _getPrototypeOf = __webpack_require__(126);
 	
 	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 	
-	var _classCallCheck2 = __webpack_require__(127);
+	var _classCallCheck2 = __webpack_require__(130);
 	
 	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 	
-	var _createClass2 = __webpack_require__(128);
+	var _createClass2 = __webpack_require__(131);
 	
 	var _createClass3 = _interopRequireDefault(_createClass2);
 	
-	var _possibleConstructorReturn2 = __webpack_require__(132);
+	var _possibleConstructorReturn2 = __webpack_require__(135);
 	
 	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 	
-	var _inherits2 = __webpack_require__(150);
+	var _inherits2 = __webpack_require__(153);
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	

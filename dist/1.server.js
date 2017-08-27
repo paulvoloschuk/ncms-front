@@ -10,7 +10,7 @@ exports.modules = {
 	    value: true
 	});
 	
-	var _reactRedux = __webpack_require__(158);
+	var _reactRedux = __webpack_require__(161);
 	
 	var _counter = __webpack_require__(309);
 	
@@ -152,7 +152,7 @@ exports.modules = {
 	
 	exports.__esModule = true;
 	
-	var _defineProperty = __webpack_require__(129);
+	var _defineProperty = __webpack_require__(132);
 	
 	var _defineProperty2 = _interopRequireDefault(_defineProperty);
 	
@@ -268,10 +268,10 @@ exports.modules = {
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	if(content.locals) module.exports = content.locals;
 	if (typeof window === 'undefined') {
-	   __webpack_require__(210).addStyles(content, {});
+	   __webpack_require__(213).addStyles(content, {});
 	} else {
 	// add the styles to the DOM
-	var update = __webpack_require__(211)(content, {});
+	var update = __webpack_require__(214)(content, {});
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
@@ -292,7 +292,7 @@ exports.modules = {
 /***/ 314:
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(209)();
+	exports = module.exports = __webpack_require__(212)();
 	// imports
 	
 	
