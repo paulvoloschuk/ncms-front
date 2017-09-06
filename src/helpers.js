@@ -9,5 +9,6 @@ export const triggerAction = (state, trowedAction, actions, reducerName) => {
 }
 
 export default {
-  activeStateClass: activeStateClass
+  activeStateClass: activeStateClass,
+  triggerAction: triggerAction
 }

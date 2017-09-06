@@ -66,6 +66,7 @@ class Login extends Component {
         <TextField
           hintText="Username Field"
           maxLength="32"
+          value="test_login1"
           floatingLabelText="Username"
           type="text"
           errorText={errors.login}
@@ -77,6 +78,7 @@ class Login extends Component {
           <TextField
             hintText="Password Field"
             maxLength="32"
+            value="ASD12asd"
             floatingLabelText="Password"
             type={password.hidden ? 'password' : 'text'}
             errorText={errors.password}

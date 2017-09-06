@@ -5,4 +5,4 @@ const initialState = {
   rank: 0
 }
 
-export default (state = initialState, action) => triggerAction(state, action, actions, 'apanel')
+export default (state = initialState, action) => triggerAction(state, action, actions, 'user')

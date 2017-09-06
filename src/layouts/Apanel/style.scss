@@ -114,6 +114,9 @@
           height: 100%;
           padding: 1em;
         }
+        @media (max-width: 30em) {
+          width: calc(100vw - 5em)
+        }
       }
     }
     &--active {
