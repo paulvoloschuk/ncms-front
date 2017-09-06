@@ -1,14 +1,14 @@
 exports.ids = [2];
 exports.modules = {
 
-/***/ 310:
+/***/ 321:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	exports.__esModule = true;
 	
-	var _defineProperty = __webpack_require__(132);
+	var _defineProperty = __webpack_require__(134);
 	
 	var _defineProperty2 = _interopRequireDefault(_defineProperty);
 	
@@ -31,7 +31,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 316:
+/***/ 327:
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40,11 +40,11 @@ exports.modules = {
 	    value: true
 	});
 	
-	var _reactRedux = __webpack_require__(161);
+	var _reactRedux = __webpack_require__(163);
 	
-	var _async = __webpack_require__(317);
+	var _async = __webpack_require__(328);
 	
-	var _Async = __webpack_require__(319);
+	var _Async = __webpack_require__(330);
 	
 	var _Async2 = _interopRequireDefault(_Async);
 	
@@ -87,7 +87,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 317:
+/***/ 328:
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97,7 +97,7 @@ exports.modules = {
 	});
 	exports.actions = exports.fetchData = exports.FETCHING_DATA = exports.FETCHED_DATA = undefined;
 	
-	var _defineProperty2 = __webpack_require__(310);
+	var _defineProperty2 = __webpack_require__(321);
 	
 	var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 	
@@ -111,7 +111,7 @@ exports.modules = {
 	exports.fetchedData = fetchedData;
 	exports.default = asyncReducer;
 	
-	var _isomorphicFetch = __webpack_require__(318);
+	var _isomorphicFetch = __webpack_require__(329);
 	
 	var _isomorphicFetch2 = _interopRequireDefault(_isomorphicFetch);
 	
@@ -178,14 +178,14 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 318:
+/***/ 329:
 /***/ (function(module, exports) {
 
 	module.exports = require("isomorphic-fetch");
 
 /***/ }),
 
-/***/ 319:
+/***/ 330:
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -199,23 +199,23 @@ exports.modules = {
 	
 	var _stringify2 = _interopRequireDefault(_stringify);
 	
-	var _getPrototypeOf = __webpack_require__(126);
+	var _getPrototypeOf = __webpack_require__(128);
 	
 	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 	
-	var _classCallCheck2 = __webpack_require__(130);
+	var _classCallCheck2 = __webpack_require__(132);
 	
 	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 	
-	var _createClass2 = __webpack_require__(131);
+	var _createClass2 = __webpack_require__(133);
 	
 	var _createClass3 = _interopRequireDefault(_createClass2);
 	
-	var _possibleConstructorReturn2 = __webpack_require__(135);
+	var _possibleConstructorReturn2 = __webpack_require__(137);
 	
 	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 	
-	var _inherits2 = __webpack_require__(153);
+	var _inherits2 = __webpack_require__(155);
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
@@ -229,7 +229,7 @@ exports.modules = {
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
-	var _reactResolver = __webpack_require__(292);
+	var _reactResolver = __webpack_require__(303);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	

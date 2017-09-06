@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 import ThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import Helmet from 'react-helmet'
 import Apanel from '../layouts/Apanel'
+import Notifier from '../layouts/Notifier'
 import defaultLayout from '../../config/layout'
 import clone from 'clone'
 
@@ -26,6 +27,7 @@ class AppContainer extends React.Component {
             <Apanel />
             <Helmet {...Object.assign(clone(defaultLayout), layout)} />
             <Router history={history} children={routes} key={routerKey} />
+            <Notifier />
           </div>
         </ThemeProvider>
       </Provider>

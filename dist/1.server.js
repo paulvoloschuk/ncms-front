@@ -1,7 +1,7 @@
 exports.ids = [1];
 exports.modules = {
 
-/***/ 308:
+/***/ 319:
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10,11 +10,11 @@ exports.modules = {
 	    value: true
 	});
 	
-	var _reactRedux = __webpack_require__(161);
+	var _reactRedux = __webpack_require__(163);
 	
-	var _counter = __webpack_require__(309);
+	var _counter = __webpack_require__(320);
 	
-	var _Counter = __webpack_require__(311);
+	var _Counter = __webpack_require__(322);
 	
 	var _Counter2 = _interopRequireDefault(_Counter);
 	
@@ -60,7 +60,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 309:
+/***/ 320:
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -70,7 +70,7 @@ exports.modules = {
 	});
 	exports.actions = exports.doubleAsync = exports.COUNTER_INCREMENT = undefined;
 	
-	var _defineProperty2 = __webpack_require__(310);
+	var _defineProperty2 = __webpack_require__(321);
 	
 	var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 	
@@ -145,14 +145,14 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 310:
+/***/ 321:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	exports.__esModule = true;
 	
-	var _defineProperty = __webpack_require__(132);
+	var _defineProperty = __webpack_require__(134);
 	
 	var _defineProperty2 = _interopRequireDefault(_defineProperty);
 	
@@ -175,7 +175,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 311:
+/***/ 322:
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -184,7 +184,7 @@ exports.modules = {
 	  value: true
 	});
 	
-	var _Counter = __webpack_require__(312);
+	var _Counter = __webpack_require__(323);
 	
 	var _Counter2 = _interopRequireDefault(_Counter);
 
@@ -194,7 +194,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 312:
+/***/ 323:
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -212,7 +212,7 @@ exports.modules = {
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
-	var _Counter = __webpack_require__(313);
+	var _Counter = __webpack_require__(324);
 	
 	var _Counter2 = _interopRequireDefault(_Counter);
 	
@@ -258,20 +258,20 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 313:
+/***/ 324:
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(314);
+	var content = __webpack_require__(325);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	if(content.locals) module.exports = content.locals;
 	if (typeof window === 'undefined') {
-	   __webpack_require__(213).addStyles(content, {});
+	   __webpack_require__(215).addStyles(content, {});
 	} else {
 	// add the styles to the DOM
-	var update = __webpack_require__(214)(content, {});
+	var update = __webpack_require__(216)(content, {});
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
@@ -289,10 +289,10 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 314:
+/***/ 325:
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(212)();
+	exports = module.exports = __webpack_require__(214)();
 	// imports
 	
 	

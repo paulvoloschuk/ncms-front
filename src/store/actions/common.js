@@ -1,6 +1,8 @@
 export default {
-  PROCESSING: (state, action) => {
-    state.processing = action.payload
-    return state
-  },
+  'user/LOGIN_START': (state, action) => {
+    return(
+      ...state,
+      notification: 
+    )
+  }
 }

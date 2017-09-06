@@ -12,7 +12,10 @@ class Apanel extends Component {
     super()
 
     this.privileges = {
-      0: ['login']
+      0: ['login'],
+      1: [],
+      2: [],
+      3: []
     }
     this.sections = {
       login: <Login />
@@ -60,7 +63,7 @@ class Apanel extends Component {
                 <span>{actionName}</span>
               </div>
             </button>)}
-          <button className={classes.apanel__bar__item} title={`[${this.hotkeys.togglePanel.join('+')}] to toggle`} onClick={() => {if(!user.rank) this.props.togglePanel()}}>
+          <button className={classes.apanel__bar__item} title={`[${this.hotkeys.togglePanel.join('+')}] to toggle`} onClick={() => {user.rank ? this.props.logOut() : this.props.togglePanel()}}>
             <img src="/" />
             <span>{user.rank ? 'logout' : 'exit'}</span>
           </button>
@@ -85,7 +88,8 @@ const mapStateToProps = state => ({
 })
 const mapDispatchToProps = dispatch => ({
   togglePanel: () => dispatch({type: 'apanel/TOGGLE_STATE'}),
-  toggleSection: sectionName => dispatch({type: 'apanel/TOGGLE_SECTION', payload: sectionName})
+  toggleSection: sectionName => dispatch({type: 'apanel/TOGGLE_SECTION', payload: sectionName}),
+  logOut: () => dispatch({type: 'user/LOGOUT'})
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Apanel)

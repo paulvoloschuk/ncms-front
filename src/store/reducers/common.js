@@ -1,7 +1,12 @@
-import {triggerAction} from '../../helpers'
+import {insertData} from '../../helpers'
+import notifications from '../../helpers/interpretation'
 
 const initialState = {
-  processing: false
+  processing: false,
+  notifications: {
+    msg: 'example',
+    dateTime: new Date
+  }
 }
 
 export default (state = initialState, action) => {
@@ -17,5 +22,14 @@ export default (state = initialState, action) => {
       newStatus = false
     if (oldStatus !== newStatus) state.processing = newStatus
   }
+
+  // showing notifications
+  if(notifications[action.type])
+    state.notification = {
+      msg: insertData(action),
+      dateTime: new Date()
+    }
+
+
   return {...state}
 }

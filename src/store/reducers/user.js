@@ -1,7 +1,7 @@
 import {triggerAction} from '../../helpers'
 import actions from 'store/actions/user'
 
-const initialState = {
+export const initialState = {
   rank: 0
 }
 
