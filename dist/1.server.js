@@ -1,7 +1,7 @@
 exports.ids = [1];
 exports.modules = {
 
-/***/ 319:
+/***/ 361:
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12,9 +12,9 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(163);
 	
-	var _counter = __webpack_require__(320);
+	var _counter = __webpack_require__(362);
 	
-	var _Counter = __webpack_require__(322);
+	var _Counter = __webpack_require__(364);
 	
 	var _Counter2 = _interopRequireDefault(_Counter);
 	
@@ -60,7 +60,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 320:
+/***/ 362:
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -70,7 +70,7 @@ exports.modules = {
 	});
 	exports.actions = exports.doubleAsync = exports.COUNTER_INCREMENT = undefined;
 	
-	var _defineProperty2 = __webpack_require__(321);
+	var _defineProperty2 = __webpack_require__(363);
 	
 	var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 	
@@ -145,7 +145,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 321:
+/***/ 363:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -175,7 +175,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 322:
+/***/ 364:
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -184,7 +184,7 @@ exports.modules = {
 	  value: true
 	});
 	
-	var _Counter = __webpack_require__(323);
+	var _Counter = __webpack_require__(365);
 	
 	var _Counter2 = _interopRequireDefault(_Counter);
 
@@ -194,7 +194,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 323:
+/***/ 365:
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -212,7 +212,7 @@ exports.modules = {
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
-	var _Counter = __webpack_require__(324);
+	var _Counter = __webpack_require__(366);
 	
 	var _Counter2 = _interopRequireDefault(_Counter);
 	
@@ -258,13 +258,13 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 324:
+/***/ 366:
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(325);
+	var content = __webpack_require__(367);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	if(content.locals) module.exports = content.locals;
 	if (typeof window === 'undefined') {
@@ -289,7 +289,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 325:
+/***/ 367:
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(214)();

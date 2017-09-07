@@ -1,6 +1,5 @@
 import API from '../../modules/API'
 import {initialState} from '../reducers/user'
-import notifications from 'react-materialui-notifications'
 
 export function login(data) {
   return dispatch => {

@@ -3,22 +3,21 @@ import {connect} from 'react-redux'
 import classes from './style.scss'
 import logoImage from '../../static/img/logo-white.svg'
 import CircularProgress from 'material-ui/CircularProgress';
+import privileges from '../../privileges'
 
 import Login from './sections/Login'
+import Users from './sections/Users'
 import {activeStateClass} from '../../helpers'
+
+
+
 
 class Apanel extends Component {
   constructor () {
     super()
-
-    this.privileges = {
-      0: ['login'],
-      1: [],
-      2: [],
-      3: []
-    }
     this.sections = {
-      login: <Login />
+      login: <Login />,
+      users: <Users />
     }
     this.hotkeys = {
       togglePanel: ['Control', 'Insert']
@@ -56,7 +55,7 @@ class Apanel extends Component {
           <div className={classes.apanel__bar__logo}>
             {logotype}
           </div>
-          {this.privileges[user.rank].map((actionName, index) =>
+          {privileges[user.rank].map((actionName, index) =>
             <button className={activeStateClass(classes, 'apanel__bar__item', apanel.module === actionName)} key={index} onClick={() => this.props.toggleSection(actionName)}>
               <div>
                 <img src="/" />
@@ -70,7 +69,7 @@ class Apanel extends Component {
         </div>
         <div className={activeStateClass(classes, 'apanel__body', apanel.module)}>
           <div className={classes.apanel__body__wrapper}>
-            {this.privileges[user.rank].map((sectionName, index) => (
+            {privileges[user.rank].map((sectionName, index) => (
               <div className={activeStateClass(classes, 'apanel__body__wrapper__section', apanel.module === sectionName)} key={index}>
                 {this.sections[sectionName]}
               </div>

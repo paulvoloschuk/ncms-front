@@ -1,5 +1,6 @@
 import {insertData} from '../../helpers'
 import notifications from '../../helpers/interpretation'
+import API from '../../modules/API'
 
 const initialState = {
   processing: false,
@@ -22,6 +23,12 @@ export default (state = initialState, action) => {
       newStatus = false
     if (oldStatus !== newStatus) state.processing = newStatus
   }
+
+  // set x-auth-token
+  if(action.type === 'user/LOGIN_SUCCESS')
+    API.defaults.headers.common['x-access-token'] = action.payload.data.token
+  if(action.type === 'user/LOGOUT')
+    API.defaults.headers.common['x-access-token'] = null
 
   // showing notifications
   if(notifications[action.type])

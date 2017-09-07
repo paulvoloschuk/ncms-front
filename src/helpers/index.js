@@ -9,13 +9,8 @@ export const triggerAction = (state, trowedAction, actions, reducerName) => {
   return state
 }
 
-export const insertData = action => {
-  console.log(action);
-
-  return interpretation[action.type]
+export const insertData = action => interpretation[action.type]
     .replace(/\:(\w+)/g, (match, offset, string) => action.payload.data[offset] || '%undefined%')
-}
-  // query.replace(/\:(\w+)/g, () => {})
 
 export default {
   activeStateClass: activeStateClass,

@@ -1,7 +1,7 @@
 exports.ids = [2];
 exports.modules = {
 
-/***/ 321:
+/***/ 363:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -31,7 +31,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 327:
+/***/ 369:
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42,9 +42,9 @@ exports.modules = {
 	
 	var _reactRedux = __webpack_require__(163);
 	
-	var _async = __webpack_require__(328);
+	var _async = __webpack_require__(370);
 	
-	var _Async = __webpack_require__(330);
+	var _Async = __webpack_require__(372);
 	
 	var _Async2 = _interopRequireDefault(_Async);
 	
@@ -87,7 +87,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 328:
+/***/ 370:
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97,7 +97,7 @@ exports.modules = {
 	});
 	exports.actions = exports.fetchData = exports.FETCHING_DATA = exports.FETCHED_DATA = undefined;
 	
-	var _defineProperty2 = __webpack_require__(321);
+	var _defineProperty2 = __webpack_require__(363);
 	
 	var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 	
@@ -111,7 +111,7 @@ exports.modules = {
 	exports.fetchedData = fetchedData;
 	exports.default = asyncReducer;
 	
-	var _isomorphicFetch = __webpack_require__(329);
+	var _isomorphicFetch = __webpack_require__(371);
 	
 	var _isomorphicFetch2 = _interopRequireDefault(_isomorphicFetch);
 	
@@ -178,14 +178,14 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 329:
+/***/ 371:
 /***/ (function(module, exports) {
 
 	module.exports = require("isomorphic-fetch");
 
 /***/ }),
 
-/***/ 330:
+/***/ 372:
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -229,7 +229,7 @@ exports.modules = {
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
-	var _reactResolver = __webpack_require__(303);
+	var _reactResolver = __webpack_require__(345);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
