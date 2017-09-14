@@ -19,19 +19,18 @@ class Users extends Component {
     this.props.getUsers()
   }
   provide(id) {
-
     return {
-      show: e => {
+      show: event => {
         console.log('show', id);
       },
-      edit: e => {
+      edit: event => {
         console.log('edit', id);
       },
-      delete: e => {
-        e.stopPropagation()
+      delete: event => {
+        event.stopPropagation()
         console.log('delete', id);
       },
-      add: e => {
+      add: event => {
         console.log('add', id);
       },
     }
